@@ -1,0 +1,8 @@
+Inc/
+Drivers/
+*.crf
+*.o
+*.scvd
+*.Ali
+*.uvoptx
+DebugConfig/
