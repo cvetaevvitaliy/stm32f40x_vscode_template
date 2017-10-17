@@ -6,14 +6,13 @@
         {
             "taskName": "build",
             "type": "shell",
-            "command": "armclang.exe Src/main.c -xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c -fno-rtti -funsigned-char -fshort-enums -fshort-wchar -D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Inc -I ./Drivers/STM32F4xx_HAL_Driver/Inc -I ./Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ./Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ./Drivers/CMSIS/Include -I./RTE/_test    -IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.1.1/CMSIS/Include            -IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.11.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include             -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER",
-            // "command": "armclang.exe Src/main.c -xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c            -fno-rtti -funsigned-char -fshort-enums -fshort-wchar            -D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Inc -I ./Drivers/STM32F4xx_HAL_Driver/Inc -I ./Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ./Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ./Drivers/CMSIS/Include            -I./RTE/_test            -IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.1.1/CMSIS/Include            -IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.11.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include       -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER            -o test/*.o -MD",
-
-             "group": {
-                 "kind": "build",
-                 "isDefault": true
-             },
-             "problemMatcher":"$gcc"
+            // "command": "armclang.exe Src/main.c -xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c -fno-rtti -funsigned-char -fshort-enums -fshort-wchar -D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Inc -I ./Drivers/STM32F4xx_HAL_Driver/Inc -I ./Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ./Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ./Drivers/CMSIS/Include -I./RTE/_test    -IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.1.1/CMSIS/Include            -IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.11.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include             -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER",
+            "command": "armclang.exe -xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c -fno-rtti -funsigned-char -fshort-enums -fshort-wchar -D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Inc -I ./Drivers/STM32F4xx_HAL_Driver/Inc -I ./Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ./Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ./Drivers/CMSIS/Include -I./RTE/_test -IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.1.1/CMSIS/Include -IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.11.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -o test/*.o -MD",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
         }
     ]
 }

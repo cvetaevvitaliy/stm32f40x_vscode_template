@@ -5,4 +5,6 @@ Drivers/
 *.scvd
 *.Ali
 *.uvoptx
+*.lst
 DebugConfig/
+MDK-ARM/test
